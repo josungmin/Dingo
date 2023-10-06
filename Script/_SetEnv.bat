@@ -1,7 +1,7 @@
 @echo off
 
 set PROJECT_NAME=Dingo
-set ENGINE_VERSION=5.1
+set ENGINE_VERSION=5.2
 
 set PROJECT_DIR=%~dp0
 set PROJECT_DIR=%PROJECT_DIR:~0,-8%

@@ -7,8 +7,21 @@ public class Dingo : ModuleRules
 	public Dingo(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+
+		PublicIncludePaths.AddRange(new string[] { "Dingo" });
+
+		PublicDependencyModuleNames.AddRange(new string[] 
+		{ 
+			// Defualt Module
+			"Core", 
+			"CoreUObject", 
+			"Engine",
+			"InputCore",
+
+			// New Module
+			"EnhancedInput",
+			"Niagara"
+		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
